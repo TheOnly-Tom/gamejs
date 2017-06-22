@@ -6,4 +6,4 @@
 * Write the gosh darn thing
 
 
-[Test page](http://rawgit.com/TheOnly-Tom/gamejs/test.html)
+<a href="http://rawgit.com/TheOnly-Tom/gamejs/master/test.html" target="_blank">Test Page</a>
