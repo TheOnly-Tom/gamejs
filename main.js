@@ -24,6 +24,12 @@ var gamePlayer = {
   },
   loop: function() {
     this.ctx.clearRect(0,0,this.width,this.height);
+    if (this.background != undefined) {
+      this.background.draw();
+    }
+    for (i=0;i<this.OBJECTS.length) {
+      this.OBJECTS[i].draw();
+    }
   },
   start: function() {
     this.running = setInterval(this.loop,this.tick);
