@@ -34,8 +34,12 @@ var gamePlayer = {
   end: function() {
     clearInterval(this.running);
     this.running = 0;
+  },
+  OBJECTS: []
 };
 
 var gameObject = {
- 
+  create: function(player, x, y, width, height) {
+    
+  }
 };
