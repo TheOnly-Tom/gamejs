@@ -44,8 +44,12 @@ var gamePlayer = {
   OBJECTS: []
 };
 
-var gameObject = {
-  create: function(player, x, y, width, height) {
-    
+function gameObject(attrs) {
+  if (typeof attrs != "object") {
+    throw Error("Game object attributes invalid: must be of type object")
   }
-};
+  for (i=0;i<attrs.length;i++) {
+    this[attrs["n"]] = attrs["v"]
+  }
+  gameplayer.OBJECTS.push(this)
+}
